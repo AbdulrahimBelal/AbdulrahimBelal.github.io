@@ -104,3 +104,5 @@ body.lang-en .hero h1{letter-spacing:-1.1px}
   }
   body.lang-en .hero h1{letter-spacing:-.7px}
 }
+
+.education-card .degree-title{font-size:16px;line-height:1.55;font-weight:800;margin-bottom:5px}
