@@ -68,3 +68,18 @@ body.lang-en .timeline-date{font-family:"Inter",sans-serif;letter-spacing:.15px}
   .contact-email a{color:#172534}
   a{text-decoration:none!important}
 }
+
+/* Training section */
+.training-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.training-card{padding:25px 24px;border:1px solid var(--line);border-inline-start:3px solid rgba(0,211,167,.45);border-radius:17px;background:var(--surface)}
+.training-card h3{font-size:17px;line-height:1.6;margin-bottom:9px}
+.training-card>p:not(.card-index){font-size:13px;line-height:2;color:var(--muted);margin-bottom:14px}
+.training-card .card-index{margin-top:0}
+@media(max-width:680px){.training-grid{grid-template-columns:1fr}.training-card{padding:21px 18px}}
+@media print{
+  .training-grid{grid-template-columns:repeat(2,1fr);gap:3mm}
+  .training-card{padding:4mm;border-color:#d8e0e6;border-inline-start:3px solid #24586b;background:#fff!important}
+  .training-card h3{font-size:10.5pt;color:#172534}
+  .training-card>p:not(.card-index){font-size:8.5pt;color:#43515f}
+  .training-card .card-index{color:#24586b;margin:1mm 0 2mm}
+}
