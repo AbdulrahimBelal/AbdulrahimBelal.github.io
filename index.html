@@ -1,474 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عبدالرحيم بلال - الموقع الشخصي</title>
-    <meta name="description" content="الموقع الشخصي لعبدالرحيم بلال - مدير إدارة الشؤون الفنية والشبكات بوزارة العدل الليبية">
-    <meta name="keywords" content="عبدالرحيم بلال, مدير تقني, شبكات, برمجة, ليبيا, وزارة العدل">
-    <meta name="author" content="عبدالرحيم بلال">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="عبدالرحيم بلال - الموقع الشخصي">
-    <meta property="og:description" content="مدير تقني بخبرة 15+ عاماً في قيادة التحول الرقمي بالقطاع الحكومي">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://abdulrahim-belal.github.io">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>عبدالرحيم بلال | الموقع الشخصي</title>
+  <meta name="description" content="الموقع الشخصي لعبدالرحيم بلال، مهندس شبكات وتقنية معلومات ومدير مكتب المتابعة بمركز المعلومات والتوثيق بوزارة العدل الليبية.">
+  <meta name="author" content="عبدالرحيم بلال">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="عبدالرحيم بلال | الموقع الشخصي">
+  <meta property="og:description" content="تقنية المعلومات والشبكات والأنظمة والمتابعة المؤسسية.">
+  <meta property="og:url" content="https://abdulrahimbelal.github.io/">
+  <link rel="canonical" href="https://abdulrahimbelal.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2300d3a7'/%3E%3Ctext x='50' y='67' font-size='48' text-anchor='middle' font-family='Arial' font-weight='bold' fill='%23101827'%3EAB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-spinner"></div>
-    </div>
-    
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">عبدالرحيم بلال</a>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">نبذة عني</a></li>
-                <li><a href="#experience" class="nav-link">الخبرات</a></li>
-                <li><a href="#skills" class="nav-link">المهارات</a></li>
-                <li><a href="#projects" class="nav-link">المشاريع</a></li>
-                <li><a href="#contact" class="nav-link">التواصل</a></li>
-            </ul>
-            <button class="language-toggle" id="languageToggle">
-                <i class="fas fa-language"></i>
-                English
-            </button>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
+  <a class="skip-link" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Abdulrahim Belal home"><span class="brand-mark">AB</span><span data-i18n="brand">عبدالرحيم بلال</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="navAbout">نبذة</a>
+        <a href="#experience" data-i18n="navExperience">الخبرات</a>
+        <a href="#expertise" data-i18n="navExpertise">مجالات العمل</a>
+        <a href="#projects" data-i18n="navProjects">مشروعات</a>
+        <a href="#contact" data-i18n="navContact">تواصل</a>
+      </div>
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">EN <span aria-hidden="true">↗</span></button>
     </nav>
-    
-    <!-- Main Container -->
-    <div class="main-container">
-        <div class="resume-container">
-            <!-- Arabic Content -->
-            <div class="arabic-content">
-                <div class="header">
-                    <div class="header-content">
-                        <div class="profile-image">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h1 class="name">عبدالرحيم بلال</h1>
-                        <div class="title">مدير إدارة الشؤون الفنية والشبكات</div>
-                        <div class="company">مركز المعلومات والتوثيق - وزارة العدل - ليبيا</div>
-                        
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-phone header-icon"></i>
-                                <span>+218913080167</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope header-icon"></i>
-                                <span>abdulrahim.belal@gmail.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt header-icon"></i>
-                                <span>طرابلس - ليبيا</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-globe header-icon"></i>
-                                <span>العربية (اللغة الأم)، الإنجليزية (متقدم)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <!-- Executive Summary -->
-                    <div class="section" id="about">
-                        <h2 class="section-title"><i class="fas fa-user-tie"></i> الملخص التنفيذي</h2>
-                        <p class="summary">
-                            مدير تقني بخبرة <span class="highlight">15+ عاماً</span> في قيادة التحول الرقمي بالقطاع الحكومي. قادت <span class="highlight">15+ مشروعاً وطنياً</span> في البنية التحتية التقنية، حققت من خلالها:
-                            خفض تكاليف التشغيل <span class="highlight">30%</span> عبر أتمتة العمليات، رفع كفاءة أنظمة الأرشفة الإلكترونية بنسبة <span class="highlight">40%</span>، 
-                            تأمين <span class="highlight">100%</span> من مراكز البيانات ضد الاختراقات، إدارة فرق فنية حتى <span class="highlight">20 موظفاً</span> 
-                            وميزانيات تصل إلى <span class="highlight">500,000 دينار</span>.
-                        </p>
-                    </div>
-                    
-                    <!-- Work Experience -->
-                    <div class="section" id="experience">
-                        <h2 class="section-title"><i class="fas fa-briefcase"></i> الخبرات العملية</h2>
-                        
-                        <div class="timeline-item">
-                            <div class="job-title">مدير إدارة الشؤون الفنية والشبكات</div>
-                            <div class="company-name">مركز المعلومات والتوثيق - وزارة العدل</div>
-                            <div class="date">
-                                <i class="fas fa-calendar-alt"></i>
-                                مارس 2023 - حتى الآن
-                            </div>
-                            <ul class="achievements">
-                                <li>قيادة 3 أقسام فنية (<span class="highlight">20+ موظفاً</span>) وتنفيذ الخطة الاستراتيجية للتحول الرقمي</li>
-                                <li>إدارة ميزانية سنوية <span class="highlight">500,000 دينار</span> لصيانة وتطوير البنية التحتية</li>
-                                <li>تطوير نظام أرشفة إلكتروني خدم <span class="highlight">50+ محكمة</span> وقلل زمن معالجة الملفات <span class="highlight">35%</span></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="job-title">رئيس قسم البرمجة والشبكات</div>
-                            <div class="company-name">مركز المعلومات والتوثيق - وزارة العدل</div>
-                            <div class="date">
-                                <i class="fas fa-calendar-alt"></i>
-                                ديسمبر 2015 - مارس 2023
-                            </div>
-                            <ul class="achievements">
-                                <li>تصميم وتنفيذ شبكة آمنة لـ <span class="highlight">100+ موقع قضائي</span></li>
-                                <li>قيادة تطوير بوابة الموظفين الإلكترونية التي خدمت <span class="highlight">2000+ موظف</span></li>
-                                <li>تنفيذ نظام مراقبة مركزي لـ <span class="highlight">40 موقعاً</span> قلل الحوادث الأمنية بنسبة <span class="highlight">45%</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Key Achievements -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-trophy"></i> الإنجازات البارزة</h2>
-                        <ul class="achievements">
-                            <li><span class="highlight">إدارة أزمة إعصار دانيال (2023)</span>: استعادة كاملة لخدمات <span class="highlight">15 موقعاً</span> قضائياً خلال <span class="highlight">72 ساعة</span>، تأمين بيانات حساسة لـ <span class="highlight">500,000 ملف</span> قضائي</li>
-                            <li><span class="highlight">مشروع التحول الرقمي (2016-2023)</span>: أتمتة <span class="highlight">70%</span> من إجراءات المحاكم الابتدائية، تخفيض استخدام الورق بنسبة <span class="highlight">60%</span></li>
-                            <li><span class="highlight">تطوير نظام الأرشفة الإلكتروني</span>: رفع كفاءة معالجة الملفات بنسبة <span class="highlight">40%</span> وتخفيض التكاليف التشغيلية <span class="highlight">25%</span></li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Projects -->
-                    <div class="section" id="projects">
-                        <h2 class="section-title"><i class="fas fa-project-diagram"></i> المشاريع</h2>
-                        <table class="project-table">
-                            <thead>
-                                <tr>
-                                    <th>المشروع</th>
-                                    <th>النطاق</th>
-                                    <th>الإنجاز</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>منظومات مراقبة العدالة</td>
-                                    <td>40 موقعاً</td>
-                                    <td>خفضت الحوادث الأمنية 45%</td>
-                                </tr>
-                                <tr>
-                                    <td>الشبكات المركزية</td>
-                                    <td>100+ خادم</td>
-                                    <td>زادت سرعة المعالجة 50%</td>
-                                </tr>
-                                <tr>
-                                    <td>البوابات الإلكترونية</td>
-                                    <td>2000+ مستخدم</td>
-                                    <td>وفرت 10,000 ساعة عمل سنوياً</td>
-                                </tr>
-                                <tr>
-                                    <td>أنظمة الأرشفة الإلكترونية</td>
-                                    <td>50+ محكمة</td>
-                                    <td>خفضت زمن معالجة الملفات 35%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <!-- Education -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> المؤهلات العلمية</h2>
-                        <div class="timeline-item">
-                            <div class="job-title">دبلوم عالي في برمجة وتحليل النظم</div>
-                            <div class="company-name">أكاديمية الدراسات العليا - ليبيا</div>
-                            <div class="date">
-                                <i class="fas fa-calendar-alt"></i>
-                                2009
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Skills -->
-                    <div class="section" id="skills">
-                        <h2 class="section-title"><i class="fas fa-cogs"></i> المهارات</h2>
-                        <div class="skills-container">
-                            <div class="skill-category">
-                                <h3><i class="fas fa-laptop-code"></i> المهارات التقنية</h3>
-                                <ul class="skill-list">
-                                    <li>إدارة الشبكات (Cisco CCNA)</li>
-                                    <li>الأمن السيبراني</li>
-                                    <li>برمجة Python</li>
-                                    <li>أنظمة الأرشفة الإلكترونية</li>
-                                    <li>إدارة الخوادم</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="skill-category">
-                                <h3><i class="fas fa-users"></i> المهارات الإدارية</h3>
-                                <ul class="skill-list">
-                                    <li>قيادة الفرق</li>
-                                    <li>إدارة الميزانيات</li>
-                                    <li>التخطيط الاستراتيجي</li>
-                                    <li>إدارة الأزمات</li>
-                                    <li>التواصل الفعال</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Certificates -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-certificate"></i> الشهادات</h2>
-                        <div class="certificate-item">
-                            <div class="job-title">Cisco CCNA</div>
-                            <div class="company-name">رقم الشهادة: CSCO13890273</div>
-                            <div class="date">يونيو 2023</div>
-                        </div>
-                        <div class="certificate-item">
-                            <div class="job-title">الأمن السيبراني المتقدم</div>
-                            <div class="date">نوفمبر 2020</div>
-                        </div>
-                        <div class="certificate-item">
-                            <div class="job-title">برمجة Python</div>
-                            <div class="date">فبراير 2024</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- English Content (Hidden by default) -->
-            <div class="english-content">
-                <div class="header">
-                    <div class="header-content">
-                        <div class="profile-image">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h1 class="name">Abdulrahim Belal</h1>
-                        <div class="title">Director of Technical Affairs and Networks</div>
-                        <div class="company">Information and Documentation Center - Ministry of Justice - Libya</div>
-                        
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-phone header-icon"></i>
-                                <span>+218913080167</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope header-icon"></i>
-                                <span>abdulrahim.belal@gmail.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt header-icon"></i>
-                                <span>Tripoli - Libya</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-globe header-icon"></i>
-                                <span>Arabic (Native), English (Advanced)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content english">
-                    <!-- Executive Summary -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-user-tie"></i> Executive Summary</h2>
-                        <p class="summary">
-                            Technical Director with <span class="highlight">15+ years</span> of experience leading digital transformation in the government sector. Led <span class="highlight">15+ national projects</span> in technical infrastructure, achieving:
-                            <span class="highlight">30% reduction</span> in operational costs through process automation, <span class="highlight">40% improvement</span> in efficiency of electronic archiving systems,
-                            <span class="highlight">100% security</span> of data centers against breaches, management of technical teams up to <span class="highlight">20 employees</span>
-                            and budgets up to <span class="highlight">500,000 LYD</span>.
-                        </p>
-                    </div>
-                    
-                    <!-- Work Experience -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
-                        
-                        <div class="timeline-item">
-                            <div class="job-title">Director of Technical Affairs and Networks</div>
-                            <div class="company-name">Information and Documentation Center - Ministry of Justice</div>
-                            <div class="date">
-                                <i class="fas fa-calendar-alt"></i>
-                                March 2023 - Present
-                            </div>
-                            <ul class="achievements">
-                                <li>Leading 3 technical departments (<span class="highlight">20+ employees</span>) and implementing the strategic digital transformation plan</li>
-                                <li>Managing an annual budget of <span class="highlight">500,000 LYD</span> for infrastructure maintenance and development</li>
-                                <li>Developing an electronic archiving system serving <span class="highlight">50+ courts</span> and reducing file processing time by <span class="highlight">35%</span></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="job-title">Head of Programming and Networks Department</div>
-                            <div class="company-name">Information and Documentation Center - Ministry of Justice</div>
-                            <div class="date">
-                                <i class="fas fa-calendar-alt"></i>
-                                December 2015 - March 2023
-                            </div>
-                            <ul class="achievements">
-                                <li>Designing and implementing a secure network for <span class="highlight">100+ judicial sites</span></li>
-                                <li>Leading the development of an electronic employee portal serving <span class="highlight">2,000+ employees</span></li>
-                                <li>Implementing a central monitoring system for <span class="highlight">40 sites</span> reducing security incidents by <span class="highlight">45%</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Key Achievements -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-trophy"></i> Key Achievements</h2>
-                        <ul class="achievements">
-                            <li><span class="highlight">Daniel Storm Crisis Management (2023)</span>: Full restoration of services for <span class="highlight">15 judicial sites</span> within <span class="highlight">72 hours</span>, securing sensitive data for <span class="highlight">500,000 case files</span></li>
-                            <li><span class="highlight">Digital Transformation Project (2016-2023)</span>: Automation of <span class="highlight">70%</span> of primary court procedures, <span class="highlight">60% reduction</span> in paper usage</li>
-                            <li><span class="highlight">Electronic Archiving System Development</span>: <span class="highlight">40% improvement</span> in file processing efficiency and <span class="highlight">25% reduction</span> in operational costs</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Projects -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projects</h2>
-                        <table class="project-table">
-                            <thead>
-                                <tr>
-                                    <th>Project</th>
-                                    <th>Scope</th>
-                                    <th>Achievement</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Justice Monitoring Systems</td>
-                                    <td>40 sites</td>
-                                    <td>Reduced security incidents by 45%</td>
-                                </tr>
-                                <tr>
-                                    <td>Central Networks</td>
-                                    <td>100+ servers</td>
-                                    <td>Increased processing speed by 50%</td>
-                                </tr>
-                                <tr>
-                                    <td>Electronic Portals</td>
-                                    <td>2,000+ users</td>
-                                    <td>Saved 10,000 work hours annually</td>
-                                </tr>
-                                <tr>
-                                    <td>Electronic Archiving Systems</td>
-                                    <td>50+ courts</td>
-                                    <td>Reduced file processing time by 35%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <!-- Education -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
-                        <div class="timeline-item">
-                            <div class="job-title">Higher Diploma in Programming and Systems Analysis</div>
-                            <div class="company-name">Graduate Studies Academy - Libya</div>
-                            <div class="date">
-                                <i class="fas fa-calendar-alt"></i>
-                                2009
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Skills -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-cogs"></i> Skills</h2>
-                        <div class="skills-container">
-                            <div class="skill-category">
-                                <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
-                                <ul class="skill-list">
-                                    <li>Network Management (Cisco CCNA)</li>
-                                    <li>Cybersecurity</li>
-                                    <li>Python Programming</li>
-                                    <li>Electronic Archiving Systems</li>
-                                    <li>Server Management</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="skill-category">
-                                <h3><i class="fas fa-users"></i> Management Skills</h3>
-                                <ul class="skill-list">
-                                    <li>Team Leadership</li>
-                                    <li>Budget Management</li>
-                                    <li>Strategic Planning</li>
-                                    <li>Crisis Management</li>
-                                    <li>Effective Communication</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Certificates -->
-                    <div class="section">
-                        <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
-                        <div class="certificate-item">
-                            <div class="job-title">Cisco CCNA</div>
-                            <div class="company-name">Certificate ID: CSCO13890273</div>
-                            <div class="date">June 2023</div>
-                        </div>
-                        <div class="certificate-item">
-                            <div class="job-title">Advanced Cybersecurity</div>
-                            <div class="date">November 2020</div>
-                        </div>
-                        <div class="certificate-item">
-                            <div class="job-title">Python Programming</div>
-                            <div class="date">February 2024</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="buttons-container">
-                <button class="action-btn" onclick="window.print()">
-                    <i class="fas fa-print"></i> طباعة/حفظ PDF
-                </button>
-                <button class="action-btn secondary" id="shareBtn">
-                    <i class="fas fa-share-alt"></i> مشاركة الموقع
-                </button>
-                <button class="action-btn secondary" id="downloadBtn">
-                    <i class="fas fa-download"></i> تحميل كملف HTML
-                </button>
-                <a href="mailto:abdulrahim.belal@gmail.com" class="action-btn secondary">
-                    <i class="fas fa-envelope"></i> راسلني
-                </a>
-            </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">تقنية المعلومات · الشبكات · المتابعة</span></div>
+        <h1 data-i18n="heroTitle">عبدالرحيم <span>بلال</span></h1>
+        <p class="hero-role" data-i18n="heroRole">مهندس تقنية معلومات وشبكات | مدير مكتب المتابعة</p>
+        <p class="hero-description" data-i18n="heroDescription">أعمل عند تقاطع البنية التحتية التقنية والأنظمة الرقمية والعمل المؤسسي، مع اهتمام بالاعتمادية والأمن وتنظيم الإجراءات وتحسين الخدمات.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experience" data-i18n="explore">استكشف خبراتي <span aria-hidden="true">↙</span></a>
+          <a class="button button-ghost" href="#contact" data-i18n="contactMe">تواصل معي</a>
         </div>
-    </div>
-    
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="social-links">
-            <a href="mailto:abdulrahim.belal@gmail.com" class="social-link" title="البريد الإلكتروني">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="tel:+218913080167" class="social-link" title="الهاتف">
-                <i class="fas fa-phone"></i>
-            </a>
-            <a href="https://linkedin.com/in/abdulrahim-belal" class="social-link" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/abdulrahim-belal" class="social-link" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
+        <div class="hero-meta"><span><i class="meta-line"></i><span data-i18n="location">طرابلس، ليبيا</span></span><span><i class="meta-line"></i><span data-i18n="sector">القطاع العام والتقنية</span></span></div>
+      </div>
+      <div class="hero-art" aria-label="Technology-inspired abstract illustration">
+        <div class="art-glow"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core-card"><div class="core-top"><span class="core-indicator"></span><span data-i18n="systemLabel">نظرة تقنية</span><span class="core-dots">•••</span></div>
+          <div class="core-symbol">&lt;/&gt;</div><div class="core-caption" data-i18n="coreCaption">أنظمة مترابطة. عمل أكثر كفاءة.</div>
+          <div class="core-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
         </div>
-        <p>&copy; 2024 عبدالرحيم بلال. جميع الحقوق محفوظة.</p>
-        <p>تم تطوير هذا الموقع بتقنيات الويب الحديثة</p>
-    </footer>
-    
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+        <div class="floating-tag tag-network"><span class="tag-icon">⌘</span><span><b data-i18n="tagNetwork">الشبكات</b><small>NETWORKS</small></span></div>
+        <div class="floating-tag tag-systems"><span class="tag-icon">▤</span><span><b data-i18n="tagSystems">الأنظمة</b><small>SYSTEMS</small></span></div>
+        <div class="art-index">01 <span>/</span> 04</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span><span data-i18n="scroll">تابع الاستكشاف</span></a>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="section-heading"><p class="section-kicker" data-i18n="aboutKicker">01 — نبذة شخصية</p><h2 data-i18n="aboutTitle">التقنية ليست أجهزة فقط،<br><span>بل خدمة تُدار بذكاء.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead" data-i18n="aboutLead">متخصص في تقنية المعلومات والشبكات، بخلفية عملية في الدعم الفني وإدارة الشبكات والأنظمة، وخبرة في بيئة العمل الحكومي بوزارة العدل الليبية.</p>
+        <div class="about-detail"><p data-i18n="aboutText">أهتم ببناء بنية تحتية موثوقة، وتوثيق الإجراءات، ومتابعة تنفيذ الأعمال، وتحويل الاحتياجات اليومية إلى حلول تقنية قابلة للصيانة والتطوير. أجمع في عملي بين الفهم الفني والانضباط المؤسسي والتواصل الواضح.</p><div class="principles"><span data-i18n="principleOne">الاعتمادية أولاً</span><span data-i18n="principleTwo">توثيق واضح</span><span data-i18n="principleThree">تحسين مستمر</span></div></div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="experience">
+      <div class="shell">
+        <div class="section-heading"><p class="section-kicker" data-i18n="experienceKicker">02 — المسار المهني</p><h2 data-i18n="experienceTitle">خبرة عملية تتطور مع المسؤولية</h2><p class="section-intro" data-i18n="experienceIntro">محطات مهنية في الدعم الفني والشبكات والأنظمة، وصولاً إلى مهام المتابعة المؤسسية.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date" data-i18n="jobNowDate">2026 — حتى الآن</div><div class="timeline-card"><div class="timeline-top"><h3 data-i18n="jobNowTitle">مدير مكتب المتابعة</h3><span class="timeline-type" data-i18n="current">المهمة الحالية</span></div><p class="timeline-org" data-i18n="jobOrg">مركز المعلومات والتوثيق · وزارة العدل الليبية</p><p data-i18n="jobNowText">متابعة تنفيذ التكليفات والمراسلات ومحاضر الاجتماعات، وإعداد التقارير، ورصد الملاحظات، ودعم الالتزام بالإجراءات والاختصاصات المؤسسية.</p><div class="tag-list"><span data-i18n="jobTagOne">المتابعة والتقارير</span><span data-i18n="jobTagTwo">تنظيم الإجراءات</span><span data-i18n="jobTagThree">التنسيق المؤسسي</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date" data-i18n="jobTechDate">2023 — 2026</div><div class="timeline-card"><h3 data-i18n="jobTechTitle">مدير إدارة الشؤون الفنية والشبكات</h3><p class="timeline-org" data-i18n="jobOrg">مركز المعلومات والتوثيق · وزارة العدل الليبية</p><p data-i18n="jobTechText">الإشراف على أعمال البنية التحتية التقنية والشبكات والدعم الفني، والمساهمة في تخطيط احتياجات الأنظمة والاتصالات وتنسيق الأعمال الفنية.</p><div class="tag-list"><span data-i18n="jobTechTagOne">البنية التحتية</span><span data-i18n="jobTechTagTwo">إدارة الشبكات</span><span data-i18n="jobTechTagThree">الدعم الفني</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date" data-i18n="jobNetworksDate">2015 — 2023</div><div class="timeline-card"><h3 data-i18n="jobNetworksTitle">رئيس قسم البرمجة والشبكات</h3><p class="timeline-org" data-i18n="jobOrg">مركز المعلومات والتوثيق · وزارة العدل الليبية</p><p data-i18n="jobNetworksText">العمل على تشغيل الشبكات والأنظمة ودعم المستخدمين وتنسيق أعمال البرمجة والخدمات التقنية ضمن المركز.</p></div></article>
+          <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date" data-i18n="jobSupportDate">2014 — 2015</div><div class="timeline-card"><h3 data-i18n="jobSupportTitle">الدعم الفني والصيانة</h3><p class="timeline-org" data-i18n="jobOrg">مركز المعلومات والتوثيق · وزارة العدل الليبية</p><p data-i18n="jobSupportText">دعم الحواسيب والمستخدمين وصيانة التجهيزات والمشاركة في أعمال الشبكات داخل بيئة العمل.</p></div></article>
+          <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date" data-i18n="jobEarlyDate">2007 — 2009</div><div class="timeline-card"><h3 data-i18n="jobEarlyTitle">خدمات الحاسوب والشبكات</h3><p class="timeline-org" data-i18n="jobEarlyOrg">الفهرس لخدمات الحاسوب</p><p data-i18n="jobEarlyText">صيانة الحواسيب، والشبكات السلكية واللاسلكية، وأنظمة المعلومات وقواعد البيانات.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="expertise">
+      <div class="section-heading"><p class="section-kicker" data-i18n="expertiseKicker">03 — مجالات العمل</p><h2 data-i18n="expertiseTitle">مساحات أعمل على تطويرها</h2><p class="section-intro" data-i18n="expertiseIntro">مجالات مهنية وتقنية مرتبطة بخبرتي واهتماماتي العملية.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card"><div class="expertise-icon">⌘</div><p class="card-index">01 / INFRASTRUCTURE</p><h3 data-i18n="skillNetworkTitle">الشبكات والبنية التحتية</h3><p data-i18n="skillNetworkText">تصميم وتنظيم الشبكات، تقسيم الشبكة، الاتصال بين المواقع، ومتابعة أداء البنية التحتية.</p><div class="mini-tags"><span>MikroTik</span><span>VLAN</span><span>Routing</span></div></article>
+        <article class="expertise-card"><div class="expertise-icon">⛨</div><p class="card-index">02 / SECURITY</p><h3 data-i18n="skillSecurityTitle">أمن الشبكات</h3><p data-i18n="skillSecurityText">مبادئ تقسيم الشبكات، الجدران النارية، الوصول الآمن، ومراجعة إعدادات الاتصال.</p><div class="mini-tags"><span>FortiGate</span><span>VPN</span><span>Firewall</span></div></article>
+        <article class="expertise-card"><div class="expertise-icon">▣</div><p class="card-index">03 / SYSTEMS</p><h3 data-i18n="skillSystemsTitle">الخوادم والأنظمة</h3><p data-i18n="skillSystemsText">تشغيل خدمات Linux، متابعة الخدمات، النسخ الاحتياطي، ومراقبة الأنظمة.</p><div class="mini-tags"><span>Ubuntu</span><span>Linux</span><span>Zabbix</span></div></article>
+        <article class="expertise-card"><div class="expertise-icon">↗</div><p class="card-index">04 / OPERATIONS</p><h3 data-i18n="skillOpsTitle">المتابعة وتحسين العمل</h3><p data-i18n="skillOpsText">تنظيم التكليفات والمراسلات، إعداد التقارير، توثيق الإجراءات، ومتابعة التنفيذ.</p><div class="mini-tags"><span data-i18n="opsTagOne">تقارير</span><span data-i18n="opsTagTwo">توثيق</span><span data-i18n="opsTagThree">تنسيق</span></div></article>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="projects">
+      <div class="shell">
+        <div class="section-heading"><p class="section-kicker" data-i18n="projectsKicker">04 — تطبيقات ومشروعات</p><h2 data-i18n="projectsTitle">من الاحتياج إلى حل قابل للاستخدام</h2><p class="section-intro" data-i18n="projectsIntro">نماذج من مجالات العمل والتطوير التي أتابعها أو أعمل عليها، دون نسب نتائج رقمية غير موثقة.</p></div>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-number">01</div><div><p class="project-type" data-i18n="projectTypeOne">بنية تحتية</p><h3 data-i18n="projectOneTitle">ربط المواقع والشبكات</h3><p data-i18n="projectOneText">تخطيط شبكة مترابطة للمواقع الإدارية والقضائية، مع فصل الشبكات حسب الاستخدام ومراعاة الحماية وقابلية الإدارة.</p><span class="project-status" data-i18n="projectStatusPlan">تخطيط وتطوير</span></div></article>
+          <article class="project-card"><div class="project-number">02</div><div><p class="project-type" data-i18n="projectTypeTwo">إدارة الأنظمة</p><h3 data-i18n="projectTwoTitle">الخوادم والمراقبة</h3><p data-i18n="projectTwoText">تشغيل خدمات Linux ومراقبة توافر الأنظمة والخدمات وتوثيق إجراءات الصيانة والاستعادة.</p><span class="project-status" data-i18n="projectStatusPractical">تطبيقات عملية</span></div></article>
+          <article class="project-card"><div class="project-number">03</div><div><p class="project-type" data-i18n="projectTypeThree">تحسين الإجراءات</p><h3 data-i18n="projectThreeTitle">تنظيم المتابعة والتوثيق</h3><p data-i18n="projectThreeText">هيكلة سجلات التكليفات والتقارير والمراسلات لتسهيل تتبع الحالة والمسؤولية ومواعيد التنفيذ.</p><span class="project-status" data-i18n="projectStatusDevelopment">قيد التطوير</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell education-section" id="education">
+      <div class="section-heading"><p class="section-kicker" data-i18n="educationKicker">05 — التعليم</p><h2 data-i18n="educationTitle">التأهيل العلمي</h2></div>
+      <div class="education-card"><div class="education-icon">▤</div><div><h3 data-i18n="degreeTitle">دبلوم عالٍ في برمجة وتحليل النظم</h3><p data-i18n="degreeOrg">أكاديمية الدراسات العليا · ليبيا</p></div><span class="education-year">2009</span></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="shell contact-inner"><div><p class="section-kicker" data-i18n="contactKicker">للتواصل المهني</p><h2 data-i18n="contactTitle">لنجعل التقنية أكثر فائدة.</h2><p data-i18n="contactText">للتواصل بشأن الأعمال التقنية أو التعاون المهني، يمكن استخدام البريد الإلكتروني أو صفحة فيسبوك.</p></div>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:abdulrahim@aladel.gov.ly"><span>✉</span><span data-i18n="emailButton">راسلني بالبريد</span></a><a class="button button-outline" href="https://www.facebook.com/abdulrahim.belal" target="_blank" rel="noopener noreferrer"><span>↗</span><span data-i18n="facebookButton">ملفي على فيسبوك</span></a></div>
+        <div class="contact-email">abdulrahim@aladel.gov.ly</div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark">AB</span><span data-i18n="brand">عبدالرحيم بلال</span></a><p data-i18n="footerText">موقع شخصي يعرض الخبرات والاهتمامات المهنية.</p><span>© <span id="year"></span> Abdulrahim Belal</span></div></footer>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
 </body>
 </html>
-
