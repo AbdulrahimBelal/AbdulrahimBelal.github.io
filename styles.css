@@ -106,3 +106,7 @@ body.lang-en .hero h1{letter-spacing:-1.1px}
 }
 
 .education-card .degree-title{font-size:16px;line-height:1.55;font-weight:800;margin-bottom:5px}
+
+/* Contact actions remain legible and wrap on narrow screens. */
+.contact-actions{flex-wrap:wrap}
+.contact-actions .button{white-space:normal;text-align:center}
